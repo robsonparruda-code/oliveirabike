@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Instagram } from "lucide-react";
 
 const WHATSAPP_LINK = "https://wa.me/5581999691619?text=Olá! Vim pelo site e gostaria de mais informações.";
 
@@ -29,15 +29,26 @@ const CTASection = () => {
               Orçamento rápido via WhatsApp • Atendimento ágil • Sem surpresas no preço
             </p>
 
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity"
-            >
-              <MessageCircle className="w-6 h-6" />
-              Falar com Especialista
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity"
+              >
+                <MessageCircle className="w-6 h-6" />
+                Falar com Especialista
+              </a>
+              <a
+                href="https://instagram.com/oliveirabikerec"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-transparent text-primary-foreground px-8 py-4 rounded-xl text-lg font-bold hover:bg-primary-foreground/10 transition-colors border border-primary-foreground/30"
+              >
+                <Instagram className="w-6 h-6" />
+                Nosso Instagram
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>
