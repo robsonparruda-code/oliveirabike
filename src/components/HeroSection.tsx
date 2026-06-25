@@ -16,10 +16,10 @@ const HeroSection = () => {
           height={1080}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/80" />
+        <div className="absolute inset-0 bg-background/50" />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(180deg, hsla(240,10%,8%,0.3) 0%, hsl(240,10%,8%) 95%)" }}
+          style={{ background: "linear-gradient(180deg, hsla(215,10%,16%,0.1) 0%, hsl(215,10%,16%) 100%)" }}
         />
       </div>
 
